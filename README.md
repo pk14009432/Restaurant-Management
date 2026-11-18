@@ -1,7 +1,71 @@
-# Restaurant-Management
+# Restaurant Management System
 
-Restaurant Management System is a web application. This system is developed to automate day to day activity of a restaurant.
-Restaurant is a kind of business that serves people all over world with readymade food. This system is developed to provide service facility to restaurant and also to the customer.
-This restaurant management system can be used by employees in a restaurant to handle the clients, their orders and can help them easily find free tables or place orders.
-The services that are provided is food ordering and reservation table management by the customer through the system online, customer information management and waiter information management, menu information management and report.
-The restaurant menu is organized by categories (appetizers, soups, salads, entrees, sides and drinks) of menu items.
+A Node.js and Express web application prototype for managing restaurant operations such as bookings, tables, menu items, staff records and billing.
+
+## Features represented in the source structure
+
+- Customer and user account flows
+- Table and booking management
+- Food and drink menu management
+- Chef and waiter management
+- Billing and dashboard routes
+- Server-rendered pages using EJS
+- MongoDB data models using Mongoose
+- Local authentication integration using Passport
+
+## Technology stack
+
+- Node.js
+- Express
+- MongoDB and Mongoose
+- EJS
+- Passport and Passport Local
+- Bootstrap and jQuery
+
+## Project structure
+
+- `app.js` — Express application entry point and route registration
+- `config/` — database and Passport configuration
+- `controllers/` — request/business logic
+- `models/` — Mongoose data models
+- `routes/` — application routes
+- `views/` — EJS templates (where present)
+- `public/` and `uploads/` — static assets (where present)
+
+## Run locally
+
+### Prerequisites
+
+- Node.js and npm
+- MongoDB running locally
+
+### Steps
+
+1. Clone this repository.
+2. Open a terminal in the project directory.
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Ensure MongoDB is running and the database connection in `config/database.js` points to your local instance.
+5. Start the application:
+
+   ```bash
+   npm start
+   ```
+
+6. Open `http://localhost:3000` in your browser.
+
+## Security and maintenance notes
+
+This is an older educational project and should be treated as a prototype, not a production-ready service. Before deployment, move the session secret and database configuration into environment variables, rotate any secret that has ever been committed, use maintained dependency versions, review authentication/session settings, and validate uploads and user input.
+
+## Project status
+
+Educational project. Installation and feature descriptions should be verified against a fresh local setup before production use.
+
+## Author
+
+Pintu Kumar
